@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tracker 2</title>
+    <base href="/">
+    <!-- $$VERSION !-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Icon import !-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Font Import !-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- Scripts MSAL needs for IE !-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js" class="pre"></script>
+    <script type='text/javascript'>
+      //Adrum
+      window['adrum-start-time'] = new Date().getTime();
+      (function(config){
+          config.appKey = 'EUM-AAB-AWG';
+          config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+          config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+          config.beaconUrlHttp = 'http://NA-APPD-PROD-EUM.chubb.com:7001';
+          config.beaconUrlHttps = 'https://NA-APPD-PROD-EUM.chubb.com:7002';
+          config.xd = {enable : false};
+          config.fetch = false;
+          config.spa = {spa2 : true};
+
+      })(window['adrum-config'] || (window['adrum-config'] = {}));
+    </script>
+    <script src='//cdn.appdynamics.com/adrum/adrum-latest.js' type='text/javascript' charset='UTF-8'></script>
+    <script>
+      __Zone_enable_cross_context_check = true;
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>
